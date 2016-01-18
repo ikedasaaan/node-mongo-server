@@ -1,0 +1,31 @@
+extends layout
+script(src='./javascripts/controller/login.js')
+
+block content
+  .row
+    .col-md-12.center.login-header
+      h2 #{LAB_01_001}
+  .row
+    .well.col-md-5.center.login-box
+      .alert.alert-info
+        | #{LAB_01_002}
+      if message
+        .alert.alert-danger
+          | #{message}
+      form#formLogin.form-horizontal(role='form', name='formLogin', method='post', action="/")
+        fieldset
+          .input-group.input-group-lg
+            span.input-group-addon
+              i.glyphicon.glyphicon-user.red
+            input#inputEmail.form-control(type='email', name='email', placeholder='#{PLH_01_001}', required)
+          .clearfix
+          br
+          .input-group.input-group-lg
+            span.input-group-addon
+              i.glyphicon.glyphicon-lock.red
+            input#inputPassword.form-control(type='password', name='password', placeholder='#{PLH_01_002}', required)
+          .clearfix
+          br
+          p.center.col-md-5
+            button.btn.btn-primary(type='submit') #{LAB_01_003}
+ 

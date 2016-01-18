@@ -1,0 +1,43 @@
+{
+    // trace, debug, info, warn, error, fatal
+    "log4js":{
+        "level": "debug"
+    },
+    "http":{
+        "host": "http://localhost/",
+        "port": "3000"
+    },
+    "ws":{
+        "host": "http://localhost/",
+        "port": "4000",
+        "transports": "'websocket', 'flashsocket', 'xhr-polling', 'jsonp-polling', 'polling'"
+    },
+    "redis":{
+        "host":"localhost",
+        "port":6379,
+        "db":5
+    },
+    "mongo":{
+        "host": "localhost",
+        "port": "27017",
+        "db" :"ecrev",
+        "user" :"ecrev_user",
+        "pass" :"tera1017"
+    },
+    "auth":{
+        "tov":1200
+    },
+    "LAB": {
+        "LAB_01_001": "Welcome to Mint Type-M",
+        "LAB_01_002": "Please login with your E-mail Address and Password.",
+        "LAB_01_003": "LOGIN",
+        "PLH_01_001": "Email address",
+        "PLH_01_002": "Password"
+    },
+    "MSG":{
+        "L_001": "find error. login",
+        "L_002": "didSetExpiry",
+        "N_001": "ログインID または パスワードが違います。",
+        "E_999": "システムエラーが発生しました。"
+    }
+}
